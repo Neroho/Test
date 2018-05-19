@@ -20,13 +20,13 @@ public class RunnableDemo {
 
 class MyThread1 implements Runnable
 {
-	private int tickets = 5;
+	private int tickets = 1000;
 	public void run()
 	{
-		for(int i =0;i < 10;i++)
+		for(int i =0;i < 10002;i++)
 		{
 			if(tickets > 0)
-				System.out.println("MyThread1 sold ticket "+ tickets--);
+				System.out.println(Thread.currentThread().getId()+": sold ticket "+ tickets--);
 		}
 	}
 }

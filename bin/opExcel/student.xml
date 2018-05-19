@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excel id="student" code="student" name="student informations import">
+  <colgroup>
+	<col index="A" width="17em"></col>
+	<col index="B" width="17em"></col>
+	<col index="C" width="17em"></col>
+	<col index="D" width="17em"></col>
+	<col index="E" width="17em"></col>
+	<col index="F" width="17em"></col>
+  </colgroup>
+  <title>
+     <tr height="16px">
+     	<td rowspan="1" colspan="6" value="student informations import"/>
+     </tr>
+  	<thead>
+  		<tr height="16px">
+  		 <th value="id"/>
+  		 <th value="name"/>
+  		 <th value="age"/>
+  		 <th value="sex"/>
+  		 <th value="birthday"/>
+  		 <th value="interesting"/>
+  		</tr>
+  	</thead>
+  	<tbody>
+  	  <tr height="16px" firstrow="2" firstcol="0" repeat="5">
+  		 <td type="string" isnullable="false" maxlength="30" />
+  		 <td type="string" isnullable="false" maxlength="50" />
+  		 <td type="numeric" format="##0" isnullable="false" />
+  		 <td type="enum" format="boy,girl" isnullable="true" />
+  		 <td type="date" isnullable="false" maxlength="30"/>
+  		 <td type="enum" format="football,basketball,soccer" isnullable="true" />
+  	  </tr>
+  	</tbody>
+  </title>
+</excel>

@@ -1,0 +1,9 @@
+Client_new {
+com.sun.security.auth.module.Krb5LoginModule required
+useKeyTab=true
+keyTab="D:\working\new_cloud\hbase-example\hbase-example\hbase-example\conf\user.keytab"
+principal="cx_zxdcx"
+useTicketCache=false
+storeKey=true
+debug=true;
+};

@@ -9,7 +9,7 @@ import ThreadTest.interruptedTest.SleepInterrupt;
  * @author Nero
  * @创建日期:2016-8-21
  */
-class MyThread extends Thread {
+public class ThreadDemo extends Thread {
 	private  int ticket = 5;
     public void run(){
         for (int i=0;i<10;i++)
@@ -21,24 +21,21 @@ class MyThread extends Thread {
         
         flag+=1;
     }
-    private int flag=0;
-	public MyThread(int flag) {
+	private static int flag=0;
+	public ThreadDemo(int flag) {
 		super();
 		this.flag = flag;
 	}
-   
-}
- 
-public class ThreadDemo{
-	private static int flag=0;
-    public static void main(String[] args) throws InterruptedException{
-        new MyThread(flag).start();
-        new MyThread(flag).start();
-        new MyThread(flag).start();
-        while(flag<5)
-        {
-        	Thread.sleep(10);
-        }
-        System.out.println("main");
-    }
+	 public static void main(String[] args) throws InterruptedException{
+	        new ThreadDemo(flag).start();
+	        new ThreadDemo(flag).start();
+	        new ThreadDemo(flag).start();
+	        new ThreadDemo(flag).start();
+	        new ThreadDemo(flag).start();
+	        while(flag<5)
+	        {
+	        	Thread.sleep(3000);
+	        }
+	        System.out.println("main");
+	    }
 }
