@@ -1,6 +1,7 @@
-package weChat;
+package weChat.po;
 
 import java.util.List;
+
 
 public class NewsMessage extends BaseMessage{
 

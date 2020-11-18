@@ -25,7 +25,7 @@ public class ConfigManager {
     public static void loadZKModel() {
         if (!zkModelInited) {
             init();
-            ZKModelLoader.loadZKModel(properties);
+//            ZKModelLoader.loadZKModel(properties);
             zkModelInited = true;
         }
     }

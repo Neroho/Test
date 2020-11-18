@@ -1,4 +1,4 @@
-package weChat;
+package weChat.po;
 
 public class AccessToken {
 	private String token;

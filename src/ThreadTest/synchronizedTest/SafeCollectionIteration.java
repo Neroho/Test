@@ -19,7 +19,7 @@ public class SafeCollectionIteration {
 		wordList.add("require");
 	    wordList.add("special");
 	    wordList.add("handling");
-	    
+	    //对象锁 锁住实例
 	    synchronized(wordList)
 	    {
 	    	Iterator it = wordList.iterator();

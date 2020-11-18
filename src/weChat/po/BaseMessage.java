@@ -1,4 +1,4 @@
-package weChat;
+package weChat.po;
 
 public class BaseMessage {
 	private String ToUserName;

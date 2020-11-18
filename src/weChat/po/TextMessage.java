@@ -1,4 +1,5 @@
-package weChat;
+package weChat.po;
+
 
 public class TextMessage extends BaseMessage{
 

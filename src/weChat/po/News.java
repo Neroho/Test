@@ -1,4 +1,4 @@
-package weChat;
+package weChat.po;
 
 public class News {
 	private String Title;

@@ -172,6 +172,18 @@ public class Test1 {
 		test.testTimes();
 		//test.forMessages();
 		
+		char[] szOsStatus = new char[20];
+		int n = 256;
+		for(int i =0 ; i < 12 ; i++){
+            if((n & 1) == 1){
+                szOsStatus[i] = '1';
+            }else{
+                szOsStatus[i] = '0';
+            }
+            n >>= 1;
+        }
+		System.out.println(new String(szOsStatus));
+		
 	}
 	
 	private int servingSize=-1;
