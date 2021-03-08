@@ -1,0 +1,61 @@
+package designMode.createMode.factory;
+
+/**
+ * 类简述
+ *
+ *工厂模式
+ *
+ *
+ * @author he.jipeng
+ * @version 1.0
+ * @Copyright
+ * @createDate 2021/3/8
+ * @see
+ * @since
+ */
+public class Client {
+    public static void main(String[] args) {
+        SimpleFactory.makeProduct(0).show();
+    }
+
+    //抽象产品
+    public interface Product{
+        void show();
+    }
+
+    //具体产品：ProductA
+    static class ConcreteProduct1 implements Product {
+
+        @Override
+        public void show() {
+            System.out.println("具体产品1显示...");
+        }
+    }
+
+    //具体产品：ProductB
+    static class ConcreteProduct2 implements Product {
+        @Override
+        public void show() {
+            System.out.println("具体产品2显示...");
+        }
+    }
+    final class Const {
+        static final int PRODUCT_A = 0;
+        static final int PRODUCT_B = 1;
+        static final int PRODUCT_C = 2;
+    }
+
+    static class SimpleFactory {
+        public static Product makeProduct(int kind) {
+            switch(kind) {
+                case Const.PRODUCT_A:
+                    return new ConcreteProduct1();
+                case Const.PRODUCT_B:
+                    return new ConcreteProduct2();
+                default:
+                        return null;
+            }
+        }
+    }
+
+}
